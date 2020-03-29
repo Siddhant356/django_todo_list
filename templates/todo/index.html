@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>To Do List</title>
     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/todo.css' %}">
   </head>
   <body ng-app="toDo" ng-controller="toDoController">
     <h1>To Do List</h1>
@@ -18,7 +19,7 @@
     </div>
 
     <p>
-      <button ng-click="remove()">Done</button>
+      <button class="done" ng-click="remove()">Done</button>
     </p>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <script src="{% static 'js/todo.js' %}"></script>
